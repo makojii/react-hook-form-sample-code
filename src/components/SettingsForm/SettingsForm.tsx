@@ -6,7 +6,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 export type OnSubmitSettingsForm = SubmitHandler<SettingsFormValues>;
 
-// Settings.tsxで使うのでexport
 const SettingsFormSchema = z.object({
   address: z.string().min(1, "住所を入力してください"),
   name: z.string().min(1, "名前を入力してください"),
@@ -96,6 +95,11 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ onSubmit }) => {
   );
 };
 
+/**
+ * SettingFormValues型であるかどうか
+ * @param value
+ * @returns SettingFormValues型であるかどうか
+ */
 function isSettingFormValues(value: unknown): value is SettingsFormValues {
   const formValues = value as Record<keyof SettingsFormValues, unknown>;
   return (

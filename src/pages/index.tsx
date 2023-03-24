@@ -17,14 +17,12 @@ const Settings: React.FC = () => {
   };
 
   return (
-    <>
-      <Box sx={{ p: 36 }}>
-        <Paper sx={{ p: 4, backgroundColor: "rgba(0,0,0,0.01)" }}>
-          <Typography sx={{ my: 2 }}>店舗情報設定</Typography>
-          <SettingsForm onSubmit={onSubmit} />
-        </Paper>
-      </Box>
-    </>
+    <Box sx={{ p: 36 }}>
+      <Paper sx={{ p: 4, backgroundColor: "rgba(0,0,0,0.01)" }}>
+        <Typography sx={{ my: 2 }}>店舗情報設定</Typography>
+        <SettingsForm onSubmit={onSubmit} />
+      </Paper>
+    </Box>
   );
 };
 
