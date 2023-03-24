@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Paper, Typography } from "@mui/material";
 import { SettingsForm, SettingsFormValues } from "../components/SettingsForm";
-import { SnackbarProvider, useSnackbar } from "notistack";
+import { useSnackbar } from "notistack";
 
 const Settings: React.FC = () => {
   const { enqueueSnackbar } = useSnackbar();

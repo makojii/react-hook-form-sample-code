@@ -21,7 +21,7 @@ export type SettingsFormProps = {
 
 export const SettingsForm: React.FC<SettingsFormProps> = ({ onSubmit }) => {
   const {
-    register,
+    // register,
     control,
     handleSubmit,
     reset,
